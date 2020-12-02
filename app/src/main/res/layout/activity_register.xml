@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/ImageUpload"
+        android:layout_width="349dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_action_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etfname"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/ImageUpload"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:background="@android:color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageUpload" />
+
+    <EditText
+        android:id="@+id/etlname"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Last name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfname" />
+
+    <EditText
+        android:id="@+id/etemailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etlname" />
+
+    <EditText
+        android:id="@+id/etpasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemailRegister" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="Choose Gender:"
+        android:drawableLeft="@drawable/ic_action_gender"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpasswordRegister" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Male"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Female"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Others"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDateRegister"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:gravity="center"
+        android:text="Choose DOB:"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="350dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateRegister" />
+
+    <TextView
+        android:id="@+id/textViewLoginRegister"
+        android:layout_width="286dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="Login Here"
+        android:textColor="#c0ffff"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

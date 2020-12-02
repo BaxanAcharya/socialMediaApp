@@ -1,0 +1,2 @@
+include ':app', ':socialmediawear'
+rootProject.name='SocialMedia'

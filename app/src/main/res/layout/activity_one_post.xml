@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/OnePost_userimage"
+                    android:layout_width="72dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/no_image"
+                    app:layout_constraintEnd_toStartOf="@+id/OnePost_post"
+                    app:layout_constraintHorizontal_bias="0.253"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/OnePost_post_name"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="KAKA"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_date" />
+
+                <TextView
+                    android:id="@+id/OnePost_post"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="36"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/OnePost_date"
+                    android:layout_width="352dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginRight="44dp"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_post" />
+
+                <ImageView
+                    android:id="@+id/OnePost_post_image"
+                    android:layout_width="382dp"
+                    android:layout_height="196dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/no_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_post_name" />
+
+                <TextView
+                    android:id="@+id/OnePost_like_no"
+                    android:layout_width="126dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/edittext"
+                    android:gravity="center"
+                    android:text="Likes: 45"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/OnePost_comment_no"
+                    app:layout_constraintHorizontal_bias="0.381"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_post_image" />
+
+                <TextView
+                    android:id="@+id/OnePost_comment_no"
+                    android:layout_width="180dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/edittext"
+                    android:gravity="center"
+                    android:text="Comments: 12"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_post_image" />
+
+
+                <ImageView
+                    android:id="@+id/btnlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_launcher_like"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/OnePost_like_no"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_launcher_comment"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.896"
+                    app:layout_constraintStart_toEndOf="@+id/btnlike" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
